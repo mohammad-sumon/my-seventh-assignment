@@ -32,7 +32,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseOne"
               >
-                Difference between var, let & const
+                Difference between Local Storage and Session Storage
               </button>
             </h2>
             <div
@@ -42,15 +42,14 @@
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                var declarations are globally scoped or function scoped while
-                let and const are block scoped. var variables can be updated and
-                re-declared within its scope; let variables can be updated but
-                not re-declared; const variables can neither be updated nor
-                re-declared. They are all hoisted to the top of their scope. But
-                while var variables are initialized with undefined, let and
-                const variables are not initialized. While var and let can be
-                declared without being initialized, const must be initialized
-                during declaration.
+                There are two main types of browser storages: session and local
+                storage. Their main difference is that local storage data does
+                not expire, whereas session storage data gets cleared when the
+                user closes its browser window. The storage capacity of local
+                storage is 5MB/10MB. Whereas The storage capacity of session
+                storage is 5MB. Local storage data must be deleted via
+                javascript or manually. But Session storage data is stored only
+                for the duration of a session.
               </div>
             </div>
           </div>
@@ -64,7 +63,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo"
               >
-                Difference between Arrow function & Regular function
+                Difference between Global Scope and Block Scope
               </button>
             </h2>
             <div
@@ -74,11 +73,16 @@
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                Arrow function — also called fat arrow function — is a new
-                feature introduced in ES6 that is a more concise syntax for a
-                writing function expression. Following are the main differences:
-                01. Syntax 02. Arguments binding 03. Use of this keyword 04.
-                Using a new keyword 05. No duplicate named parameters
+                The variables defined outside of any function or curly brackets
+                are known as global variables and have global scope. Global
+                scope means that the variables can be accessed from any part of
+                that program, any function or conditional state can access that
+                variable. Whereas the Block scope is also a sub-type of local
+                scope. The block scope can be defined as the scope of the
+                variables inside the curly brackets {}. Now, these curly
+                brackets can be of loops, or conditional statements, or
+                something else. You are only allowed to refer to these variables
+                from within the curly brackets {}.
               </div>
             </div>
           </div>
@@ -92,7 +96,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseThree"
               >
-                Difference between map, forEach, filter & find
+                How JavaScript Event Loop works?
               </button>
             </h2>
             <div
@@ -102,16 +106,15 @@
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                The main difference between map and forEach is that the map
-                method returns a new array by applying the callback function on
-                each element of an array, while the forEach method doesn't
-                return anything. You can use the forEach method to mutate the
-                source array, but this isn't really the way it's meant to be
-                used. And The filter() method is used to filters all the
-                elements and returns the element that matches and the element
-                that do not match are removed. The only difference is the
-                filter() method search through all the elements while find()
-                method search through all the child elements only
+                JavaScript is a single-threaded language. In other words, it can
+                do only one thing at a time. JavaScript executes all operations
+                on a single thread, but using a few smart data structures, gives
+                us the illusion of multi-threading. The event loop is the secret
+                behind JavaScript asynchronous programming. The Event Loop has
+                one simple job — to monitor the Call Stack and the Callback
+                Queue. If the Call Stack is empty, the Event Loop will take the
+                first event from the queue and will push it to the Call Stack,
+                which effectively runs it.
               </div>
             </div>
           </div>
@@ -125,7 +128,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseFour"
               >
-                Why we use template string?
+                How many ways to get undefined?
               </button>
             </h2>
             <div
@@ -135,16 +138,15 @@
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                Template literals are literals delimited with backtick (`)
-                characters, allowing for multi-line strings, for string
-                interpolation with embedded expressions, and for special
-                constructs called tagged templates. Template literals are
-                sometimes informally called template strings, because they are
-                used most commonly for string interpolation (to create strings
-                by doing substitution of placeholders). However, a tagged
-                template literal may not result in a string; it can be used with
-                a custom tag function to perform whatever operations you want on
-                the different parts of the template literal.
+                The undefined property indicates that a variable has not been
+                assigned a value, or not declared at all. undefined is a
+                property of the global object. That is, it is a variable in
+                global scope. The initial value of undefined is the primitive
+                value undefined. A variable that has not been assigned a value
+                is of type undefined. A method or statement also returns
+                undefined if the variable that is being evaluated does not have
+                an assigned value. A function returns undefined if a value was
+                not returned.
               </div>
             </div>
           </div>
