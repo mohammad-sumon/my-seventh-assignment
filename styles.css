@@ -62,7 +62,6 @@ body {
   display: none;
 }
 #result {
-  /* position: fixed; */
   position: absolute;
   top: 50%; 
   left: 50%;
@@ -189,5 +188,16 @@ button {
   }
   .card {
     flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    padding: 8px;
+  }
+  #histories{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
   }
 }
