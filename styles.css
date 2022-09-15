@@ -192,12 +192,20 @@ button {
 }
 
 @media only screen and (min-width: 768px) {
-  .card {
-    padding: 8px;
-  }
   #histories{
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 20px;
+  }
+  .card {
+    padding: 8px;
+  }
+  #histories div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #question{
+    padding: 8px;
   }
 }
